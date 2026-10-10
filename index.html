@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Ayesha – Web Developer, WordPress Expert & AI Learner"/>
+  <title>Ayesha – Portfolio</title>
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet"/>
+  <!-- AOS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet"/>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet"/>
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+
+  <!-- =====================
+       NAVBAR
+  ====================== -->
+  <header>
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNav" role="navigation" aria-label="Main Navigation">
+      <div class="container">
+
+        <!-- Logo -->
+        <a class="navbar-brand" href="#home" aria-label="Ayesha Portfolio Home">
+          Ayesha<span class="brand-dot">.</span>
+        </a>
+
+        <!-- Right side: theme toggle + hamburger -->
+        <div class="d-flex align-items-center gap-3 ms-auto">
+
+          <!-- Dark/Light Toggle -->
+          <button class="theme-toggle-btn" id="themeToggle" aria-label="Toggle Dark/Light Mode" title="Toggle Theme">
+            <span class="toggle-track">
+              <span class="toggle-thumb">
+                <i class="bi bi-sun-fill sun-icon"></i>
+                <i class="bi bi-moon-fill moon-icon"></i>
+              </span>
+            </span>
+          </button>
+
+          <!-- Hamburger -->
+          <button class="hamburger" id="hamburger" aria-label="Toggle Menu" aria-expanded="false" aria-controls="mobileMenu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+
+        <!-- Desktop Nav Links -->
+        <div class="nav-links-wrapper" id="navLinks">
+          <ul class="nav-links" role="list">
+            <li><a href="#home" class="nav-link-item" aria-label="Home section">Home</a></li>
+            <li><a href="#services" class="nav-link-item" aria-label="Services section">Services</a></li>
+            <li><a href="#about" class="nav-link-item" aria-label="About section">About</a></li>
+            <li><a href="#portfolio" class="nav-link-item" aria-label="Portfolio section">Portfolio</a></li>
+            <li><a href="#contact" class="nav-link-item contact-nav-btn" aria-label="Contact section">Contact</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+      <ul role="list">
+        <li><a href="#home" class="mobile-link">Home</a></li>
+        <li><a href="#services" class="mobile-link">Services</a></li>
+        <li><a href="#about" class="mobile-link">About</a></li>
+        <li><a href="#portfolio" class="mobile-link">Portfolio</a></li>
+        <li><a href="#contact" class="mobile-link">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- =====================
+       HERO SECTION
+  ====================== -->
+  <section id="home" class="hero-section" aria-label="Hero Section">
+    <div class="hero-bg-shape"></div>
+    <div class="hero-bg-shape hero-bg-shape--2"></div>
+
+    <div class="container">
+      <div class="hero-grid">
+
+        <!-- Left: Text -->
+        <div class="hero-text" data-aos="fade-right" data-aos-duration="800">
+          <span class="hero-eyebrow">
+            <span class="eyebrow-dot"></span> Available for Freelance
+          </span>
+          <h1 class="hero-title">
+            Hi, I'm <span class="text-accent">Ayesha</span><br/>
+            I Build <span class="text-accent">Digital</span><br/>
+            Experiences
+          </h1>
+          <p class="hero-desc">
+            Web Developer · WordPress Expert · AI Learner.
+            Crafting modern, fast, and beautiful websites
+            that make an impact.
+          </p>
+          <div class="hero-cta-group">
+            <a href="#portfolio" class="btn-primary-custom">
+              View My Work <i class="bi bi-arrow-right"></i>
+            </a>
+            <a href="#contact" class="btn-secondary-custom">
+              Hire Me
+            </a>
+          </div>
+          <!-- Tech pills -->
+          <div class="tech-pills">
+            <span class="tech-pill"><i class="bi bi-code-slash"></i> HTML/CSS</span>
+            <span class="tech-pill"><i class="bi bi-bootstrap"></i> Bootstrap</span>
+            <span class="tech-pill"><i class="bi bi-wordpress"></i> WordPress</span>
+            <span class="tech-pill"><i class="bi bi-robot"></i> AI Tools</span>
+          </div>
+        </div>
+
+        <!-- Right: Hero Card -->
+        <div class="hero-card-wrapper" data-aos="fade-left" data-aos-duration="800" data-aos-delay="150">
+          <div class="hero-card">
+            <div class="hero-card-avatar">
+              <img
+                src="https://randomuser.me/api/portraits/women/44.jpg"
+                alt="Ayesha – Web Developer"
+                loading="eager"
+              />
+              <span class="avatar-badge"><i class="bi bi-check-lg"></i></span>
+            </div>
+            <h3 class="hero-card-name">Ayesha</h3>
+            <p class="hero-card-role">Full-Stack Web Developer</p>
+            <div class="hero-card-stats">
+              <div class="hc-stat">
+                <span class="hc-num">20+</span>
+                <span class="hc-label">Projects</span>
+              </div>
+              <div class="hc-divider"></div>
+              <div class="hc-stat">
+                <span class="hc-num">3</span>
+                <span class="hc-label">Skills</span>
+              </div>
+              <div class="hc-divider"></div>
+              <div class="hc-stat">
+                <span class="hc-num">100%</span>
+                <span class="hc-label">Dedication</span>
+              </div>
+            </div>
+          </div>
+          <!-- Floating badges -->
+          <div class="float-badge float-badge--1" aria-hidden="true">
+            <i class="bi bi-star-fill"></i> Top Rated
+          </div>
+          <div class="float-badge float-badge--2" aria-hidden="true">
+            <i class="bi bi-lightning-fill"></i> Fast Delivery
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Scroll indicator -->
+    <a href="#services" class="scroll-indicator" aria-label="Scroll to services">
+      <i class="bi bi-chevron-down"></i>
+    </a>
+  </section>
+
+  <!-- =====================
+       SERVICES SECTION
+  ====================== -->
+  <section id="services" class="section-pad" aria-label="Services Section">
+    <div class="container">
+
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">What I Do</span>
+        <h2 class="section-title">My Services</h2>
+        <p class="section-sub">From design to deployment — I handle it all.</p>
+      </div>
+
+      <!-- Services Grid: 1 col → 2 col → 3 col -->
+      <div class="services-grid">
+
+        <article class="service-card" data-aos="fade-up" data-aos-delay="0">
+          <div class="service-icon-wrap">
+            <i class="bi bi-code-slash"></i>
+          </div>
+          <h3>Web Development</h3>
+          <p>Building fast, responsive, and modern websites using HTML, CSS, JavaScript, and Bootstrap — pixel-perfect on every device.</p>
+          <ul class="service-list" aria-label="Web development skills">
+            <li><i class="bi bi-check2"></i> Responsive Design</li>
+            <li><i class="bi bi-check2"></i> Cross-browser Compatible</li>
+            <li><i class="bi bi-check2"></i> Performance Optimized</li>
+          </ul>
+        </article>
+
+        <article class="service-card service-card--featured" data-aos="fade-up" data-aos-delay="100">
+          <div class="featured-tag">Most Popular</div>
+          <div class="service-icon-wrap">
+            <i class="bi bi-wordpress"></i>
+          </div>
+          <h3>WordPress Development</h3>
+          <p>Custom WordPress themes, plugins, and WooCommerce stores tailored to your brand and business goals.</p>
+          <ul class="service-list" aria-label="WordPress development skills">
+            <li><i class="bi bi-check2"></i> Custom Themes</li>
+            <li><i class="bi bi-check2"></i> Plugin Development</li>
+            <li><i class="bi bi-check2"></i> WooCommerce Stores</li>
+          </ul>
+        </article>
+
+        <article class="service-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="service-icon-wrap">
+            <i class="bi bi-robot"></i>
+          </div>
+          <h3>AI-Powered Solutions</h3>
+          <p>Integrating AI tools, prompt engineering, and machine learning concepts into modern web applications.</p>
+          <ul class="service-list" aria-label="AI skills">
+            <li><i class="bi bi-check2"></i> AI Tool Integration</li>
+            <li><i class="bi bi-check2"></i> Prompt Engineering</li>
+            <li><i class="bi bi-check2"></i> ML Fundamentals</li>
+          </ul>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================
+       ABOUT PREVIEW
+  ====================== -->
+  <section id="about" class="section-pad about-section" aria-label="About Section">
+    <div class="container">
+      <div class="about-grid">
+
+        <!-- Left: Image side -->
+        <div class="about-img-side" data-aos="fade-right">
+          <div class="about-img-wrapper">
+            <img
+              src="https://randomuser.me/api/portraits/women/44.jpg"
+              alt="Ayesha – About Me"
+              class="about-img"
+              loading="lazy"
+            />
+            <div class="about-exp-badge">
+              <span class="exp-num">2+</span>
+              <span class="exp-text">Years<br/>Experience</span>
+            </div>
+          </div>
+          <!-- Skills bars -->
+          <div class="skills-box" data-aos="fade-right" data-aos-delay="200">
+            <div class="skill-bar-item">
+              <div class="skill-bar-header">
+                <span>Web Development</span><span>90%</span>
+              </div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" style="--w: 90%"></div>
+              </div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-header">
+                <span>WordPress</span><span>85%</span>
+              </div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" style="--w: 85%"></div>
+              </div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-header">
+                <span>AI / ML Learning</span><span>45%</span>
+              </div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" style="--w: 45%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Text -->
+        <div class="about-text-side" data-aos="fade-left">
+          <span class="section-tag">Who I Am</span>
+          <h2 class="section-title mt-2">Passionate Developer<br/>& Lifelong Learner</h2>
+          <p class="about-desc mt-3">
+            I'm Ayesha, a dedicated web developer with a passion for creating
+            digital solutions that are both beautiful and functional. I specialize
+            in front-end development, WordPress customization, and I'm actively
+            expanding into the exciting world of Artificial Intelligence.
+          </p>
+          <p class="about-desc mt-2">
+            I believe great websites are built at the intersection of clean code,
+            thoughtful design, and real user needs. Every project I take on
+            gets my full attention and dedication.
+          </p>
+
+          <!-- Value cards -->
+          <div class="about-values-grid">
+            <div class="value-card">
+              <i class="bi bi-lightning-charge-fill"></i>
+              <span>Fast Delivery</span>
+            </div>
+            <div class="value-card">
+              <i class="bi bi-shield-check-fill"></i>
+              <span>Quality Code</span>
+            </div>
+            <div class="value-card">
+              <i class="bi bi-heart-fill"></i>
+              <span>Client First</span>
+            </div>
+            <div class="value-card">
+              <i class="bi bi-arrow-repeat"></i>
+              <span>Always Learning</span>
+            </div>
+          </div>
+
+          <a href="#contact" class="btn-primary-custom mt-4 d-inline-flex">
+            Work With Me <i class="bi bi-arrow-right"></i>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================
+       PORTFOLIO PREVIEW
+  ====================== -->
+  <section id="portfolio" class="section-pad" aria-label="Portfolio Section">
+    <div class="container">
+
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">My Work</span>
+        <h2 class="section-title">Portfolio</h2>
+        <p class="section-sub">A selection of projects I've built and am proud of.</p>
+      </div>
+
+      <!-- Portfolio Filter Tabs -->
+      <div class="portfolio-filters" data-aos="fade-up" role="tablist" aria-label="Portfolio filter">
+        <button class="pf-btn active" data-filter="all" role="tab" aria-selected="true">All</button>
+        <button class="pf-btn" data-filter="web" role="tab" aria-selected="false">Web Dev</button>
+        <button class="pf-btn" data-filter="wordpress" role="tab" aria-selected="false">WordPress</button>
+        <button class="pf-btn" data-filter="ai" role="tab" aria-selected="false">AI</button>
+      </div>
+
+      <!-- Portfolio Grid: 1→2→2 columns -->
+      <div class="portfolio-grid" id="portfolioGrid">
+
+        <article class="portfolio-card" data-category="web" data-aos="fade-up" data-aos-delay="0">
+          <div class="portfolio-img-wrap">
+            <img src="https://picsum.photos/seed/port1/600/400" alt="Hero Slider Project" loading="lazy"/>
+            <div class="portfolio-overlay">
+              <span class="portfolio-cat">Web Dev</span>
+              <h4>Hero Slider Page</h4>
+              <p>Animated carousel with Bootstrap 5</p>
+              <div class="portfolio-links">
+                <a href="#" class="po-link" aria-label="View live demo"><i class="bi bi-box-arrow-up-right"></i></a>
+                <a href="#" class="po-link" aria-label="View GitHub repo"><i class="bi bi-github"></i></a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="portfolio-card" data-category="wordpress" data-aos="fade-up" data-aos-delay="100">
+          <div class="portfolio-img-wrap">
+            <img src="https://picsum.photos/seed/port2/600/400" alt="WordPress Site Project" loading="lazy"/>
+            <div class="portfolio-overlay">
+              <span class="portfolio-cat">WordPress</span>
+              <h4>Business Website</h4>
+              <p>Custom WordPress theme with WooCommerce</p>
+              <div class="portfolio-links">
+                <a href="#" class="po-link" aria-label="View live demo"><i class="bi bi-box-arrow-up-right"></i></a>
+                <a href="#" class="po-link" aria-label="View GitHub repo"><i class="bi bi-github"></i></a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="portfolio-card" data-category="ai" data-aos="fade-up" data-aos-delay="200">
+          <div class="portfolio-img-wrap">
+            <img src="https://picsum.photos/seed/port3/600/400" alt="AI Tool Project" loading="lazy"/>
+            <div class="portfolio-overlay">
+              <span class="portfolio-cat">AI</span>
+              <h4>AI Chatbot UI</h4>
+              <p>Prompt-engineered chatbot interface</p>
+              <div class="portfolio-links">
+                <a href="#" class="po-link" aria-label="View live demo"><i class="bi bi-box-arrow-up-right"></i></a>
+                <a href="#" class="po-link" aria-label="View GitHub repo"><i class="bi bi-github"></i></a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="portfolio-card" data-category="web" data-aos="fade-up" data-aos-delay="300">
+          <div class="portfolio-img-wrap">
+            <img src="https://picsum.photos/seed/port4/600/400" alt="About Page Project" loading="lazy"/>
+            <div class="portfolio-overlay">
+              <span class="portfolio-cat">Web Dev</span>
+              <h4>Team About Page</h4>
+              <p>Dynamic team management with admin panel</p>
+              <div class="portfolio-links">
+                <a href="#" class="po-link" aria-label="View live demo"><i class="bi bi-box-arrow-up-right"></i></a>
+                <a href="#" class="po-link" aria-label="View GitHub repo"><i class="bi bi-github"></i></a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+      <div class="text-center mt-5" data-aos="fade-up">
+        <a href="#contact" class="btn-secondary-custom">Let's Build Something <i class="bi bi-arrow-right"></i></a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =====================
+       CONTACT CTA SECTION
+  ====================== -->
+  <section id="contact" class="section-pad contact-section" aria-label="Contact Section">
+    <div class="container">
+      <div class="contact-grid">
+
+        <!-- Left: CTA Text -->
+        <div class="contact-text" data-aos="fade-right">
+          <span class="section-tag">Get In Touch</span>
+          <h2 class="section-title mt-2">Let's Work<br/>Together</h2>
+          <p class="about-desc mt-3">
+            Have a project in mind? I'd love to hear about it.
+            Send me a message and let's create something amazing together.
+          </p>
+          <div class="contact-info-list">
+            <div class="contact-info-item">
+              <div class="ci-icon"><i class="bi bi-envelope-fill"></i></div>
+              <div>
+                <span class="ci-label">Email</span>
+                <a href="mailto:ayesha@example.com" class="ci-value">ayesha@example.com</a>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="ci-icon"><i class="bi bi-geo-alt-fill"></i></div>
+              <div>
+                <span class="ci-label">Location</span>
+                <span class="ci-value">Peshawar, Pakistan</span>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="ci-icon"><i class="bi bi-clock-fill"></i></div>
+              <div>
+                <span class="ci-label">Availability</span>
+                <span class="ci-value">Mon – Fri, 9am – 6pm PKT</span>
+              </div>
+            </div>
+          </div>
+          <!-- Social links -->
+          <div class="contact-socials">
+            <a href="#" class="contact-social-btn" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            <a href="#" class="contact-social-btn" aria-label="GitHub"><i class="bi bi-github"></i></a>
+            <a href="#" class="contact-social-btn" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+          </div>
+        </div>
+
+        <!-- Right: Contact Form -->
+        <div class="contact-form-card" data-aos="fade-left">
+          <form id="contactForm" novalidate aria-label="Contact form">
+            <div class="form-row">
+              <div class="form-group-custom">
+                <label for="contactName">Full Name</label>
+                <input type="text" id="contactName" class="form-input-custom" placeholder="Your Name" required aria-required="true"/>
+              </div>
+              <div class="form-group-custom">
+                <label for="contactEmail">Email Address</label>
+                <input type="email" id="contactEmail" class="form-input-custom" placeholder="your@email.com" required aria-required="true"/>
+              </div>
+            </div>
+            <div class="form-group-custom">
+              <label for="contactSubject">Subject</label>
+              <input type="text" id="contactSubject" class="form-input-custom" placeholder="Project Inquiry" required aria-required="true"/>
+            </div>
+            <div class="form-group-custom">
+              <label for="contactMessage">Message</label>
+              <textarea id="contactMessage" class="form-input-custom" rows="5" placeholder="Tell me about your project..." required aria-required="true"></textarea>
+            </div>
+            <button type="submit" class="btn-primary-custom w-100 justify-content-center">
+              Send Message <i class="bi bi-send"></i>
+            </button>
+            <div id="formSuccess" class="form-success d-none" role="alert" aria-live="polite">
+              <i class="bi bi-check-circle-fill"></i> Message sent! I'll get back to you soon.
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================
+       FOOTER
+  ====================== -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+
+        <div class="footer-brand-col">
+          <a href="#home" class="footer-brand">Ayesha<span class="brand-dot">.</span></a>
+          <p class="footer-tagline">Web Developer · WordPress Expert · AI Learner</p>
+          <div class="footer-socials">
+            <a href="#" class="footer-social" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            <a href="#" class="footer-social" aria-label="GitHub"><i class="bi bi-github"></i></a>
+            <a href="#" class="footer-social" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-links-col">
+          <h6 class="footer-col-title">Quick Links</h6>
+          <ul aria-label="Footer quick links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links-col">
+          <h6 class="footer-col-title">Services</h6>
+          <ul aria-label="Footer services links">
+            <li><a href="#services">Web Development</a></li>
+            <li><a href="#services">WordPress</a></li>
+            <li><a href="#services">AI Solutions</a></li>
+            <li><a href="#contact">Freelance Work</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-newsletter-col">
+          <h6 class="footer-col-title">Stay Connected</h6>
+          <p>Get updates on my latest projects and learnings.</p>
+          <div class="newsletter-form">
+            <input type="email" placeholder="your@email.com" aria-label="Newsletter email input"/>
+            <button type="button" aria-label="Subscribe to newsletter"><i class="bi bi-send"></i></button>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>© <span id="footerYear"></span> Ayesha. All rights reserved.</p>
+        <p>Built with <i class="bi bi-heart-fill" style="color:var(--accent)"></i> using HTML, CSS & Bootstrap</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="bi bi-arrow-up"></i>
+  </button>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- AOS -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <!-- Main JS -->
+  <script src="js/main.js"></script>
+</body>
+</html>
